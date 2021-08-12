@@ -1,0 +1,12 @@
+<mat-toolbar color='primary' >
+  <button matButton mat-icon-button [matMenuTriggerFor]="navMenu">
+    <mat-icon>menu</mat-icon>
+  </button>
+</mat-toolbar>
+
+<mat-menu #navMenu="matMenu">
+  <button mat-menu-item routerLink="/monsterList" routerLinkActive="true">
+    <mat-icon>pets</mat-icon>
+    <span>Monster List</span>
+  </button>
+</mat-menu>
