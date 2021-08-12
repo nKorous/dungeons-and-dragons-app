@@ -3,14 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http'
+import { MonsterFinderComponent } from './monster-finder/monster-finder.component';
+import { MonsterListComponent } from './components/monster-list/monster-list.component';
+import { DxDataGridModule } from 'devextreme-angular';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MonsterFinderComponent,
+    MonsterListComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    DxDataGridModule
   ],
   providers: [],
   bootstrap: [AppComponent]
